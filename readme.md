@@ -5,6 +5,7 @@
 ![Lev's QR code](res/QRCode_20250405115042.png)
 
 ## Image of the log:
+```
 (venv) levz@LevsLaptop:~/projects/homework7$ docker build -t qr_code .
 [+] Building 14.5s (13/13) FINISHED                                                      docker:default
  => [internal] load build definition from Dockerfile                                               0.1s
@@ -43,3 +44,4 @@
 2025-04-05 16:22:28,811 - INFO - QR code successfully saved to /app/qr_codes/QRCode_20250405162228.png
 (venv) levz@LevsLaptop:~/projects/homework7$ docker run -v $(pwd):/app qr_code --url=https://github.com/SOME_OTHER_GITHUB
 2025-04-05 16:23:21,094 - INFO - QR code successfully saved to /app/qr_codes/QRCode_20250405162321.png
+```
